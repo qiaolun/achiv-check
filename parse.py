@@ -68,9 +68,9 @@ def parse_line(line):
                         print line
                         line_printed = True
 
-                    print "miss: %s, %s, %s" % (snsid, ach, t[k])
+                    print "miss: snsid=%s, p=%s, c=%s" % (snsid, ach, t[k])
             else:
-                print "lost: %s, %s, %s" % (snsid, ach)
+                print "lost: snsid=%s, p=%s, id=%s" % (snsid, ach, k)
  
 
     tmp_stats[snsid] = achivs
