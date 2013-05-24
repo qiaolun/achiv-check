@@ -70,6 +70,9 @@ def parse_line(line):
 
                     print "miss: snsid=%s, p=%s, c=%s" % (snsid, ach, t[k])
             else:
+                if not line_printed:
+                    print line
+                    line_printed = True
                 print "lost: snsid=%s, p=%s, id=%s" % (snsid, ach, k)
  
 
